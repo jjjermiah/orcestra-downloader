@@ -58,7 +58,6 @@ class PharmacoSet(BaseModel):
 		PharmacoSet
 		    An instance of PharmacoSet.
 		"""
-		log.debug('Parsing PharmacoSet from JSON: %s', data)
 		return super().from_json(data)
 
 
@@ -68,7 +67,7 @@ if __name__ == '__main__':
 	from pathlib import Path
 
 	# Path to the cache file
-	cache_file = Path.home() / '.cache/orcestradownloader/psets.json'
+	cache_file = Path.home() / '.cache/orcestradownloader/pharmacosets.json'
 
 	# Read the JSON data
 	with cache_file.open('r') as f:
