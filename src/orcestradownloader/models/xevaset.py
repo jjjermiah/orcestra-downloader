@@ -15,32 +15,32 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-from orcestradownloader.logging_config import logger as log
+from orcestradownloader.logging_config import log as log
 from orcestradownloader.models.base import BaseModel
 
 
 @dataclass
 class XevaSet(BaseModel):
-	"""
-	Represents a xenograft dataset.
+    """
+    Represents a xenograft dataset.
 
-	Inherits from BaseModel for shared functionality.
-	"""
+    Inherits from BaseModel for shared functionality.
+    """
 
-	@classmethod
-	def from_json(cls, data: dict) -> XevaSet:
-		"""
-		Create a XevaSet instance from a JSON object.
+    @classmethod
+    def from_json(cls, data: dict) -> XevaSet:
+        """
+        Create a XevaSet instance from a JSON object.
 
-		Parameters
-		----------
-		data : dict
-		    The JSON object containing data for the record.
+        Parameters
+        ----------
+        data : dict
+            The JSON object containing data for the record.
 
-		Returns
-		-------
-		XevaSet
-		    An instance of XevaSet.
-		"""
-		log.debug('Parsing XevaSet from JSON: %s', data)
-		return super().from_json(data)
+        Returns
+        -------
+        XevaSet
+            An instance of XevaSet.
+        """
+        log.debug("Parsing XevaSet from JSON: %s", data)
+        return super().from_json(data)

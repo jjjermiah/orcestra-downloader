@@ -19,7 +19,7 @@ from rich.progress import (
 from rich.table import Table
 
 from orcestradownloader.cache import Cache
-from orcestradownloader.logging_config import logger as log
+from orcestradownloader.logging_config import log as log
 from orcestradownloader.models.base import BaseModel
 
 # Type variable for subclasses of BaseModel

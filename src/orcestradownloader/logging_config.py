@@ -84,4 +84,5 @@ def set_log_verbosity(
 
     return decorator
 
-logger = logging.getLogger("orcestra")
+
+log = logging.getLogger("orcestra")
